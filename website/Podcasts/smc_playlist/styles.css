@@ -228,7 +228,6 @@
 /* hero section CSS */
 .main
 {
-    background-image: linear-gradient(to left, #2e1f6675 0%, #f837ff4b 100%);
     background-color: #131313;
 }
 
@@ -236,8 +235,8 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
+    align-items: left;
+    justify-self: left;
     margin: 0 auto;
     height: 90vh;
     z-index: 1;
@@ -248,12 +247,12 @@
     color: #FFFFFF;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
 }
 
 .main__content h1
 {
-    font-size: 6rem;
+    font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -265,7 +264,7 @@
 
 .main__content h2
 {
-    font-size: 6rem;
+    font-size: 3rem;
     background-color: #ff1100;
     background-image: linear-gradient(to top, #8808ff 0%, #ff236c 100%);
     background-size: 100%;
@@ -285,7 +284,7 @@
 
 .main__btn
 {
-    font-size: 1rem;
+    font-size: 2rem;
     background-image: linear-gradient(to top, #8808ff 0%, rgb(55, 0, 255) 100%);
     padding: 14px 32px;
     border: none;
@@ -339,6 +338,18 @@
 {
     width: 100vw;
     height: 100vh;
+}
+
+.hero__background-video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120vw;
+    height: 125vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 50%;
 }
       
 iframe 
