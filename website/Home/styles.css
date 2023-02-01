@@ -27,7 +27,7 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 500000px;
+    max-width: 132200px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -123,7 +123,7 @@
         height: 80px;
         z-index: 1;
         width: 100%;
-        max-width: 1300px;
+        max-width: 200000px;
         padding: 0;
     }
 
@@ -240,7 +240,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-image: linear-gradient(to left, #2e1f6675 0%, #f837ff4b 100%);
+    background-image: linear-gradient(to left, #2e1f6675 0%, #f837ff3a 100%);
     z-index: 1;
     width: 100%;
     max-width: 200000px;
@@ -249,7 +249,7 @@
 
 .main__content h1
 {
-    font-size: 6rem;
+    font-size: 5rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -257,11 +257,12 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    justify-self: center;
 }
 
 .main__content h2
 {
-    font-size: 6rem;
+    font-size: 4rem;
     background-color: #ff1100;
     background-image: linear-gradient(to top, #8808ff 0%, #ff236c 100%);
     background-size: 100%;
@@ -269,19 +270,22 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    justify-self: center;
 }
 
 .main__content p
 {
-    margin-top: 1rem;
+    margin-left: 0.5rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+    align-content: center;
+    justify-self: center;
 }
 
 .main__btn
 {
-    font-size: 1rem;
+    font-size: 2rem;
     background-image: linear-gradient(to top, #8808ff 0%, rgb(55, 0, 255) 100%);
     padding: 14px 32px;
     border: none;
@@ -291,6 +295,8 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
+    margin-left: .5rem;
+    justify-self: center;
 }
 
 .main__btn a
