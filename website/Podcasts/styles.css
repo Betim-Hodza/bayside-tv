@@ -253,7 +253,8 @@
 
 .main__content h1
 {
-    font-size: 6rem;
+    font-size: 5rem;
+    transform: translate(0px, -200px);
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -265,7 +266,8 @@
 
 .main__content h2
 {
-    font-size: 6rem;
+    font-size: 4.5rem;
+    transform: translate(0px, -200px);
     background-color: #ff1100;
     background-image: linear-gradient(to top, #8808ff 0%, #ff236c 100%);
     background-size: 100%;
@@ -285,7 +287,7 @@
 
 .main__btn
 {
-    font-size: 25px;
+    font-size: 30px;
     background-image: linear-gradient(to top, #8808ff 0%, rgb(55, 0, 255) 100%);
     padding: 14px 32px;
     border-radius: 4px;
@@ -294,6 +296,7 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
+    transform: translate(-920px, -50px);
 }
 
 .main__btn a
@@ -327,8 +330,8 @@
     position:absolute;
     align-self: right;
     justify-self: right;
-    width: 30vw;
-    height: 50vh;
+    width: 50vw;
+    height: 0vh;
 }
 
 .main__img--container 
