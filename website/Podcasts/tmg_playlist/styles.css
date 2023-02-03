@@ -32,7 +32,6 @@
     padding: 0 50px;
 }
 
-/* Cup logo*/
 #navbar__logo
 {
     background-color: #ff8177;
@@ -236,25 +235,24 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: left;
-    justify-self: left;
-    margin: 0  -24rem;
-    height: 50vh;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 80vh;
     z-index: 1;
-    width:50%;
-    max-width: 120vhx;
-    max-height: 80vh;
+    width: 100%;
+    max-width: 200000px;
     padding: 0 50px;
     position: absolute;
     color: #FFFFFF;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-48rem, 4rem);
 }
 
 .main__content h1
 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -262,7 +260,8 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    transform: translate(-80px, 0px);
+    transform: translate(0rem, -20rem);
+    padding-right: 15rem;
 }
 
 .main__content h2
@@ -275,32 +274,34 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    transform: translate(-80px, 0px);
+    transform: translate(0rem, -20rem);
+    padding-right: 15rem;
 }
 
 .main__content p
 {
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
-    transform: translate(-80px, 0px);
+    transform: translate(.5rem, -20rem);
+    padding-right: 15rem;
 }
 
-/* main button */
 .main__btn
 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     background-image: linear-gradient(to top, #8808ff 0%, rgb(55, 0, 255) 100%);
-    padding: 14px 32px;
-    border: none;
+    padding: 10px 18px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 4px;
     color: #fff;
-    margin: 2rem;
+    margin: 3rem;
     position: relative;
     transition: all 0.35s;
     outline: none;
-    transform: translate(-100px, 0px);
+    transform: translate(-2.5rem, -22.8rem);
+    display: flex;
 }
 
 .main__btn a
@@ -329,20 +330,23 @@
     width: 100%;
 }
 
+
 /* sub button */
 .sub__btn
 {
-    font-size: 24px;
+    font-size: 1.5rem;
     background-image: linear-gradient(to top, #4fe7b2 0%, rgba(71, 112, 128, 0.784) 100%);
     padding: 8px 16px;
     border: none;
     border-radius: 20px;
     color: #fff;
-    margin: 1rem;
+    margin: 1.2rem;
     position: relative;
     transition: all 0.35s;
     outline: none;
-    transform: translate(-100px, 0px);
+    transform: translate(-1rem, -25rem);
+    width: 10rem;
+    display: flex;
 }
 
 .sub__btn a
@@ -373,7 +377,14 @@
 }
 
 
-
+.button_class
+{
+    position:absolute;
+    align-self: right;
+    justify-self: right;
+    width: 50vw;
+    height: 0vh;
+}
 
 .main__img--container 
 {
@@ -381,12 +392,11 @@
     margin: 0 auto;
 }
 
-#main__img
+.main__img
 {
     height: 80%;
     width: 80%;
 }
-
 
 /*Video background*/
 .hero__background-video
@@ -394,21 +404,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 99vw;
-    max-width: 150vw;
+    width: 120vw;
     height: 120vh;
-    max-height: 80vh;
-    transform: translate(-50%, -300px);
+    transform: translate(-50rem, -22rem);
     pointer-events: none;
     opacity: 50%;
-    scale: 130%;
+    display: flex;
 }
 
 .video-container
 {
     width: 100vw;
+    max-width: 99vw;
     height: 100vh;
-    max-height: 100vh;
+    display: flex;
 }
       
 iframe 
@@ -416,18 +425,25 @@ iframe
     position: absolute;
     top: 55%;
     left: 45%;
-    width: 70vw;
-    height: 82vh;
-    transform: translate(-10px, -50%);
+    width: 62vw;
+    height: 75.5vh;
+    transform: translate(-150px, -600px);
     pointer-events: all;
 }
+
+html,body
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 
 @media (min-aspect-ratio: 16/9)
 {
     .video-container iframe 
     {
       /* height = 100 * (9 / 16) = 56.25 */
-      height: 56.25vw;
+      height: 58.25vw;
     }
 }
       
@@ -479,7 +495,7 @@ iframe
     }
 }
 
-@media screen and (max-width 480px)
+@media screen and (max-width: 480px)
 {
 
     .main__btn

@@ -346,10 +346,16 @@ iframe
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
-    transform: translate(-50%, -50%);
+    transform: translate(-51%, -50%);
     pointer-events: none;
+}
+
+html,body
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @media (min-aspect-ratio: 16/9)
