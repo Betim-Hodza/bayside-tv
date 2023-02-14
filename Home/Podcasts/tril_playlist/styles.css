@@ -240,19 +240,19 @@
     margin: 0 auto;
     height: 80vh;
     z-index: 1;
-    width: 100%;
-    max-width: 200000px;
+    width: 110vw;
+    max-width: 200000vw;
     padding: 0 50px;
-    position: absolute;
+    position: relative;
     color: #FFFFFF;
     left: 50%;
     top: 50%;
-    transform: translate(-48rem, 4rem);
+    transform: translate(-48rem, -22rem);
 }
 
 .main__content h1
 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -280,7 +280,7 @@
 
 .main__content p
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #fff;
     transform: translate(.5rem, -20rem);
@@ -346,6 +346,10 @@
     outline: none;
     transform: translate(-1rem, -25rem);
     width: 10rem;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
     display: flex;
 }
 
@@ -379,11 +383,14 @@
 
 .button_class
 {
-    position:absolute;
-    align-self: right;
-    justify-self: right;
-    width: 50vw;
-    height: 0vh;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    transform: translate(-102.5rem, -45rem);
 }
 
 .main__img--container 
@@ -404,9 +411,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 125vw;
+    width: 120vw;
     height: 120vh;
-    transform: translate(-60rem, -22rem);
+    transform: translate(-50rem, -22rem);
     pointer-events: none;
     opacity: 50%;
     display: flex;
@@ -422,12 +429,12 @@
       
 iframe 
 {
-    position: absolute;
-    top: 55%;
-    left: 45%;
+    position: relative;
+    top: 50%;
+    left: 50%;
     width: 62vw;
     height: 75.5vh;
-    transform: translate(-150px, -600px);
+    transform: translate(-38rem, -23rem);
     pointer-events: all;
 }
 

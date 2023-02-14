@@ -240,19 +240,19 @@
     margin: 0 auto;
     height: 80vh;
     z-index: 1;
-    width: 100%;
-    max-width: 200000px;
+    width: 110vw;
+    max-width: 200000vw;
     padding: 0 50px;
-    position: absolute;
+    position: relative;
     color: #FFFFFF;
     left: 50%;
     top: 50%;
+    transform: translate(-48rem, -22rem);
 }
 
 .main__content h1
 {
-    font-size: 5rem;
-    transform: translate(0px, -200px);
+    font-size: 2.5rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffced6 100%);
     background-size: 100%;
@@ -260,12 +260,13 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    transform: translate(0rem, -20rem);
+    padding-right: 15rem;
 }
 
 .main__content h2
 {
-    font-size: 4.5rem;
-    transform: translate(0px, -200px);
+    font-size: 3rem;
     background-color: #ff1100;
     background-image: linear-gradient(to top, #8808ff 0%, #ff236c 100%);
     background-size: 100%;
@@ -273,29 +274,33 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    transform: translate(0rem, -20rem);
+    padding-right: 15rem;
 }
 
 .main__content p
 {
-    margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #fff;
+    transform: translate(.5rem, -20rem);
+    padding-right: 15rem;
 }
 
 .main__btn
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-image: linear-gradient(to top, #8808ff 0%, rgb(55, 0, 255) 100%);
-    padding: 14px 32px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 10px 18px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 4px;
     color: #fff;
     margin: 3rem;
     position: relative;
     transition: all 0.35s;
     outline: none;
+    transform: translate(-2.5rem, -22.8rem);
     display: flex;
 }
 
@@ -325,13 +330,67 @@
     width: 100%;
 }
 
+
+/* sub button */
+.sub__btn
+{
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, #4fe7b2 0%, rgba(71, 112, 128, 0.784) 100%);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin: 1.2rem;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    transform: translate(-1rem, -25rem);
+    width: 10rem;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.sub__btn a
+{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub__btn:after
+{
+    position:absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #ff3434 0%, #ffcc00 100%); 
+    transition: all 0.35s;
+    border-radius: 20px;
+}
+
+.sub__btn:hover:after
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
 .button_class
 {
-    position:relative;
-    align-self: right;
-    justify-self: right;
-    width: 50vw;
-    height: 0vh;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    transform: translate(-102.5rem, -45rem);
 }
 
 .main__img--container 
@@ -346,20 +405,37 @@
     width: 80%;
 }
 
+/*Video background*/
+.hero__background-video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120vw;
+    height: 120vh;
+    transform: translate(-50rem, -22rem);
+    pointer-events: none;
+    opacity: 50%;
+    display: flex;
+}
+
 .video-container
 {
     width: 100vw;
-    height: 80vh;
-    display:contents;
+    max-width: 99vw;
+    height: 100vh;
+    display: flex;
 }
       
 iframe 
 {
     position: relative;
-    width: 110vw;
-    height: 80vh;
-    transform: translate(-4rem, -5rem);
-    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    width: 62vw;
+    height: 75.5vh;
+    transform: translate(-38rem, -23rem);
+    pointer-events: all;
 }
 
 html,body
@@ -367,6 +443,7 @@ html,body
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 
 @media (min-aspect-ratio: 16/9)
 {
